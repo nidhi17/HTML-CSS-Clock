@@ -1,0 +1,209 @@
+/*Clock CSS*/
+
+body {
+	margin:0;
+	padding:0;
+	background:#F6F7F8 
+}
+
+.clock-div {
+	width:20em;
+	margin:0 auto;
+	display:block
+}
+
+.heading {
+	font-family:'Limelight',cursive;
+	font-size:24px;
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+	text-align:center;
+	padding:7px 0;
+	color:#333
+}
+
+#clock {
+	position:relative;
+	width:20em;
+	height:20em;
+	margin:0 auto;
+	border:2px solid #42464B;
+	-moz-border-radius:15em;
+	-webkit-border-radius:15em;
+	border-radius:15em;
+	background-color:#EFF3F7
+}
+
+#clock:before {
+	content:'';
+	position:absolute;
+	z-index:2;
+	width:1em;
+	height:1em;
+	background:#333;
+	left:50%;
+	top:50%;
+	margin:-4px 0 0 -8px;
+	-moz-border-radius:15em;
+	-webkit-border-radius:15em;
+	border-radius:15em;
+}
+
+#clock .numbers {
+	width:20em;
+	height:20em;
+	position:absolute;
+	top:-3px;
+	left:0
+}
+
+#clock .numbers li {
+	display:block;
+	width:1.5em;
+	height:1.5em;
+	position:absolute;
+	top:44%;
+	left:44%;
+	line-height:1.5em;
+	text-align:center;
+	margin:-.5em 0 0 -.5em;
+	font-weight:700;
+	-moz-border-radius:15em;
+	-webkit-border-radius:15em;
+	border-radius:15em;
+	border:1px solid #B5C3CF;
+	background-color:#E2E7EC;
+	color:#B5C3CF
+}
+
+#clock .numbers li:nth-child(1) {
+	transform:translate(3.9em,-6.9em)
+	
+}
+
+#clock .numbers li:nth-child(2) {
+	transform:translate(6.9em,-4em)
+	
+
+}
+
+#clock .numbers li:nth-child(3) {
+	transform:translate(8em,0)
+	
+}
+
+#clock .numbers li:nth-child(4) {
+	transform:translate(6.8em,4em)
+	
+}
+
+#clock .numbers li:nth-child(5) {
+	transform:translate(3.9em,6.9em)
+	
+}
+
+#clock .numbers li:nth-child(6) {
+	transform:translate(0,8em)
+}
+
+#clock .numbers li:nth-child(7) {
+	transform:translate(-3.9em,6.9em)
+
+}
+
+#clock .numbers li:nth-child(8) {
+	transform:translate(-6.8em,4em)
+	
+}
+
+#clock .numbers li:nth-child(9) {
+	transform:translate(-8em,0)
+	
+}
+
+#clock .numbers li:nth-child(10) {
+	transform:translate(-6.9em,-4em)
+	
+}
+
+#clock .numbers li:nth-child(11) {
+	transform:translate(-3.9em,-6.9em)
+}
+
+
+#clock .numbers li:nth-child(12) {
+	transform:translate(0,-8em)
+	
+}
+
+#clock span.hand {
+	background:#555;
+	position:absolute;
+	left:50%
+}
+
+#clock span.hand.second {
+	background:#ACBCD2;
+	height:8em;
+	margin-left:1px;
+	top:2em;
+	width:.2em;
+	animation:rotate-sec 60s infinite linear;
+	-webkit-animation:rotate-sec 60s infinite linear;
+	transform-origin:left bottom;
+	-webkit-transform-origin:left bottom;
+
+}
+
+#clock span.hand.minute {
+	background:#ACBCD2;
+	height:6em;
+	margin-left:-1px;
+	top:3.9em;
+	width:.3em;
+	animation:rotate-min 3600s infinite linear;
+	-webkit-animation:rotate-min 3600s infinite linear;
+	transform-origin:left bottom;
+	-webkit-transform-origin:left bottom;
+}
+
+#clock span.hand.hour {
+	background:#ACBCD2;
+	height:5.8em;
+	width:.3em;
+	margin-left:-2px;
+	top:4em;
+	animation:rotate-hour 84600s infinite linear;
+	-webkit-animation:rotate-hour 84600s infinite linear;
+	transform-origin:left bottom;
+	-webkit-transform-origin:left bottom;
+}
+
+@keyframes rotate-sec {
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+}
+@-webkit-keyframes rotate-sec {
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg)}
+}
+
+@keyframes rotate-min {
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+}
+
+@-webkit-keyframes rotate-min {
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg)}
+}
+
+@keyframes rotate-hour {
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+}
+
+@-webkit-keyframes rotate-hour {
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg)}
+}
