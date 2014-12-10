@@ -1,5 +1,3 @@
 HTML-CSS-Clock
 ==============
-Made from Css.
-
-No javascript file present.
+This repositiory contains no javascript file.
